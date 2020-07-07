@@ -29,12 +29,13 @@
 <p>The first step I took when planning my solution was to identify which game I would like to work on and why. My
  initial thoughts were minesweeper, flappy bird, and snake. The reason for those choices were because they were each
   games that I found myself playing all the time growing up. After reading through the instructions for this project
-   in great detail and reading through the article [How to Create a Text Based Game](https://levelskip.com/classic
-   /Make-a-Text-Based-Game "Amir's recommended article") provided in our instructions, I decided to go down the path
-    of creating a text-based game that allows the user to make choices that take them down certain paths dependent
-     upon those choice. The reason I decided to go down this path rather than that of my original game ideas is
-      because I feel as though the simplistic nature of a text-based game will really allow me to take full control
-       over the project and incorporate OOP and OOD patterns more cohesively.</p>
+   in great detail and reading through the article [article](https://levelskip.com/classic/Make-a-Text-Based-Game) 
+   provided in
+    our instructions, I decided to go down the path of creating a text-based game that allows the user to make
+     choices that take them down certain paths dependent upon those choice. The reason I decided to go down this
+      path rather than that of my original game ideas is because I feel as though the simplistic nature of a
+      text-based game will really allow me to take full control over the project and incorporate OOP and OOD patterns
+       more cohesively.</p>
 <p>After determining what type of game I was going to create, I began coming up with a UML diagram to map how I was
  going to code it out.</p>
 
