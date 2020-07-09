@@ -12,6 +12,8 @@ public class Room{
         this.roomID = roomID;
         this.description = description;
         this.exits = new HashMap<String, Integer>();
+        //Adds the option to quit to every room.
+        this.exits.put("Q", 0);
     }
 
     //*******************************************************************************
