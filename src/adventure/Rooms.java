@@ -3,12 +3,16 @@ package adventure;
 import java.util.HashMap;
 import java.util.Map;
 
-class Rooms{
+class Rooms extends Room{
 
     private static Map<Integer, Room> rooms = new HashMap<Integer, Room>();
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_RED = "\u001B[31m";
     private static final String ANSI_GREEN = "\u001B[32m";
+
+    public Rooms(int roomID, String description) {
+        super(roomID, description);
+    }
 
     public static Map<Integer, Room> getRooms() {
         rooms.put(0, new Room(0, "You have quit the game."));
