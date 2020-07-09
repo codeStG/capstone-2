@@ -1,17 +1,14 @@
 package adventure;
 
-public class Player{
-    private String name;
-    private String description;
-    private Room room;
+public class Player implements Thing{
+    private final String name;
 
-    public Player(String name, String description, Room room) {
+    public Player(String name) {
         this.name = name;
-        this. description = description;
-        this.room = room;
     }
 
-    public Room getRoom() {
-        return this.room;
+    @Override
+    public String getName() {
+        return name;
     }
 }
