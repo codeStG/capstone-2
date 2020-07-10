@@ -18,6 +18,7 @@
 <h2>
     2. Planning the Solution
 </h2>
+
 <p>One key point I had to clarify before fully understanding where to begin
      was my project structure. After cloning the repository, I learned that there was no <ins>src</ins> folder in my
       project and when trying to add a new package, I was not given the option. After verifying my work must be sorted
@@ -52,13 +53,24 @@
    core requirements using a UML diagram. 
 </p>
 
-<br>
-
-
 <h2>
     3. Executing the Plan
 </h2>
 
+<p>There were plenty of things I found myself getting caught up on when coding this adventure game. Many of these
+ things popped up while I was trying to implement the core requirements. One reoccurring question I had was, "What
+  exactly is the abstract class being used for?" Because of this question, it was difficult for me to understand if
+   I was truly using the abstract class properly or if I was simply throwing one in there to meet the requirements. 
+   This thought process led me to do more research and I stumbled upon an excellent explanation on Stack Overflow
+    (https://bit.ly/abstract456).
+    <li>The user <em>Kevin McCormick</em> states that, "Abstract classes improve the situation by preventing a
+     developer from instantiating the base class, because a developer has marked it as having missing functionality. 
+     It also provides compile-time safety so that you can ensure that any classes that extend your abstract class
+      provide the bare minimum functionality to work..."</li></p>
+<p>After getting a more clear understanding of abstract classes, I began contemplating the similarities and
+ differences between an abstract class and an interface, which I conveniently found resources for within the same
+  Stack Overflow post listed above. The same user links to another post that he believes to answer my question (
+</p>
 
 <br>
 
