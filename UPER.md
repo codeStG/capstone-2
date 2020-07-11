@@ -56,7 +56,11 @@
       for how a new level should be set up by turning it into an abstract class and extending it to each Level# class. 
       Next, I identified the fact that each Level# that was created contained a number of rooms, or each Level# HAS A
        room, per se, so I created a Room interface that would set the basis for how to set up each room that the
-        player could go through in the game. Once I completed this,  
+        player could go through in the game. Once I completed this, I made an individual class for each Room#, which
+         implements the Room interface, that is available in the Level# for the player to go through. After this step
+         , I was confident in my implementation of abstractions in my codebase and moved on to making the adventure
+          game more enjoyable with some additional functionality like the ability to pick up a weapon and use it
+           against a character that once would make you lose the game. After adding additional logic and functionality, 
 </p>
 
 <h2>
@@ -74,8 +78,14 @@
      It also provides compile-time safety so that you can ensure that any classes that extend your abstract class
       provide the bare minimum functionality to work..."</li></p>
 <p>After getting a more clear understanding of abstract classes, I began contemplating the similarities and
- differences between an abstract class and an interface, which I conveniently found resources for within the same
-  Stack Overflow post listed above. The same user links to another post that he believes to answer my question (
+ differences between an abstract class and an interface, which I was able to deduce from my prior notes on the topic
+  from prior TEKcamp lectures. After understanding what each one did for my program, I came up with a couple of
+   different ideas on where and how to implement them and then got with my TA to ensure they were realistic ideas and
+    get some guidance before drastically changing my game. Once I talked it over with my TA, I was confident enough
+     to push through with the changes and everything ended up working out successfully with very little to any
+      refactoring needed in classes that were separate from those that I modified. Once I completed this, my
+       self-confidence shot through the roof. I truly had an adventure game that was entirely my own with some pretty
+        awesome functionalities, if I may say so myself! 
 </p>
 
 <br>
