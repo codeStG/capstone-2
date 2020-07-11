@@ -49,8 +49,14 @@
 <p>After absorbing the resources listed in the bullet point above, I found myself working backwards. I have a
  functional text-based adventure game, but the core requirements were missing. I had no abstract class, no interface
  , no lambda, no stream, and still had to determine how I would organize my codebase to allow for these things. At
-  this point, I took an overhead view of my project and tried to outline how I was going to set it up to include the
-   core requirements using a UML diagram. 
+  this point, I decided to begin refactoring my code into functional pieces that would work together. First, how
+   would I achieve something like that? Knowing I needed at least one abstract class and one interface, I researched
+    those things (notated in 3. Executing the Plan) and determined where they would be best implemented in my
+     codebase. The perfect points for these abstractions were my Level class, which would ideally become a blueprint
+      for how a new level should be set up by turning it into an abstract class and extending it to each Level# class. 
+      Next, I identified the fact that each Level# that was created contained a number of rooms, or each Level# HAS A
+       room, per se, so I created a Room interface that would set the basis for how to set up each room that the
+        player could go through in the game. Once I completed this,  
 </p>
 
 <h2>

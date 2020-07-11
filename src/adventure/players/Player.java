@@ -1,6 +1,6 @@
-package adventure;
+package adventure.players;
 
-public class Player implements PhysicalObject{
+public class Player {
     private String name;
     private boolean hasSword;
 
@@ -13,12 +13,10 @@ public class Player implements PhysicalObject{
         return hasSword;
     }
 
-    public boolean setHasSword(boolean bool) {
-        hasSword = bool;
-        return hasSword;
+    public void toggleHasSword() {
+        hasSword = !hasSword;
     }
 
-    @Override
     public String getName() {
         final String initialName = this.name;
         final String firstLetter = initialName.substring(0, 1).toUpperCase();
