@@ -30,7 +30,7 @@ public class RoomTwo implements Room{
     }
 
     @Override
-    public void toggleWinOrLoseRoom() {
+    public void setWinningRoom() {
         //Empty body. not used here.
     }
 

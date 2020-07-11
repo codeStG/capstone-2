@@ -31,7 +31,7 @@ public class RoomOne implements Room{
     }
 
     @Override
-    public void toggleWinOrLoseRoom() {
+    public void setWinningRoom() {
         //Empty body. not used here.
     }
 
@@ -42,12 +42,12 @@ public class RoomOne implements Room{
 
     @Override
     public void displayWinMessage() {
-
+        //Empty body. not used here.
     }
 
     @Override
     public void displayLoseMessage() {
-
+        //Empty body. not used here.
     }
 
     @Override

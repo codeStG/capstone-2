@@ -30,25 +30,39 @@ import java.util.Scanner;
             //This is so that we can shorthand rooms.get(room) since it is used to frequently.
             Room currentRoom = rooms.get(room);
 
-            //We first display the details of the room the player is currently in/the next room the player has entered.
-            if(currentRoom.getRoomID() == 9) {
-                player.toggleHasSword();
-            } else if(currentRoom.getRoomID() == 6) {
-                if(player.getHasSword()) {
-                    currentRoom.toggleWinOrLoseRoom();
-                }
-            }
+            //First we display the details of the current room.
+            System.out.println(currentRoom.displayDetails());
 
-            if(!currentRoom.isLoseRoom() && !currentRoom.isWinRoom()) {
-                System.out.println(currentRoom.displayDetails());
-            } else if(currentRoom.isWinRoom()) {
-                System.out.println(currentRoom.displayDetails());
-                currentRoom.displayWinMessage();
-                break;
-            } else if(currentRoom.isLoseRoom()) {
-                System.out.println(currentRoom.displayDetails());
-                currentRoom.displayLoseMessage();
-                break;
+            //This switch statement performs the operations necessary on the rooms that have items that must be added
+            // to the players inventory and the rooms that are winning and losing rooms.
+            switch(room) {
+                case 5:
+                    currentRoom.displayWinMessage();
+                    break;
+                case 6:
+                    if(player.getHasSword()) {
+                        currentRoom.setWinningRoom();
+                        currentRoom.displayWinMessage();
+                        break;
+                    }
+                    currentRoom.displayLoseMessage();
+                    break;
+                case 7:
+                    player.pickupArmor();
+                    break;
+                case 9:
+                    player.pickupSword();
+                    break;
+                case 10:
+                    if (player.getHasSword() && player.getHasArmor()) {
+                        currentRoom.setWinningRoom();
+                        currentRoom.displayWinMessage();
+                        break;
+                    }
+                    currentRoom.displayLoseMessage();
+                    break;
+                default:
+                    break;
             }
 
             //Here we create a Map of exits that relate to the exits available to the current room the player is in.

@@ -9,7 +9,7 @@ import java.util.Map;
 public class RoomNine implements Room{
     int roomID = 9;
     String roomDetails = "You spot a skeleton on the ground with a sword in its hand. The sword" +
-            " has been added to your inventory and will aid you against the cave creature ahead.";
+            " has been added to your inventory and will aid you against the Shadow Beast ahead.";
     boolean gameWinner = false;
     boolean gameLoser = false;
     Map<String, Integer> exits = new HashMap<>();
@@ -30,7 +30,7 @@ public class RoomNine implements Room{
     }
 
     @Override
-    public void toggleWinOrLoseRoom() {
+    public void setWinningRoom() {
         //Empty body. not used here.
     }
 

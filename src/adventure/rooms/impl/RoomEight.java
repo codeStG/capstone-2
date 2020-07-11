@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class RoomEight implements Room{
     int roomID = 8;
-    String roomDetails = "You notice a sign in this next room that reads:\n" + Constants.ANSI_RED + "\tCAVE " +
-            "CREATURE AHEAD\n\tTURN BACK OR FACE DEATH \u2620" + Constants.ANSI_RESET;
+    String roomDetails = "You notice a sign in this next room that reads:\n" + Constants.ANSI_RED + "\tSHADOW " +
+            "BEAST AHEAD\n\tTURN BACK OR FACE DEATH \u2620" + Constants.ANSI_RESET;
     boolean gameWinner = false;
     boolean gameLoser = false;
     Map<String, Integer> exits = new HashMap<>();
@@ -30,7 +30,7 @@ public class RoomEight implements Room{
     }
 
     @Override
-    public void toggleWinOrLoseRoom() {
+    public void setWinningRoom() {
         //Empty body. not used here.
     }
 

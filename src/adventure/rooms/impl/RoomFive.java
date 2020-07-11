@@ -32,7 +32,7 @@ public class RoomFive implements Room{
     }
 
     @Override
-    public void toggleWinOrLoseRoom() {
+    public void setWinningRoom() {
         //Empty body. not used here.
     }
 
@@ -48,15 +48,16 @@ public class RoomFive implements Room{
     }
 
     public void displayWinMessage() {
-        System.out.println(Constants.ANSI_GREEN + "\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605" +
-                "\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605" +
-                "\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605");
+        System.out.println(Constants.ANSI_GREEN + "\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 " +
+                "\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605\u2605 \u2605 " +
+                "\u2605 \u2605 \u2605");
         System.out.println("CONGRATULATIONS, YOU HAVE FOUND THE HIDDEN TREASURE!");
         System.out.println("\t\t\tLEVEL ONE HAS BEEN WON!");
-        System.out.println("\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605" +
-                "\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605" +
-                "\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605" + Constants.ANSI_RESET);
-        System.out.println("Come back and play again to see if you can find even more treasure!");
+        System.out.println("\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 " +
+                "\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605\u2605 \u2605 \u2605 \u2605 \u2605" +
+                Constants.ANSI_RESET);
+        System.out.println("Come back and play again to see if you can find even more treasure or defeat the " +
+                "monsters!");
     }
 
     @Override

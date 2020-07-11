@@ -11,7 +11,7 @@ public interface Room {
 
     boolean isLoseRoom();
 
-    void toggleWinOrLoseRoom();
+    void setWinningRoom();
 
     String displayDetails();
 

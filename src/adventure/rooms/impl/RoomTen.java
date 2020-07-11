@@ -5,14 +5,13 @@ import adventure.rooms.Room;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 //Room 10 is the boss room
 public class RoomTen implements Room{
     int roomID = 10;
-    String roomDetails = "You have arrived at the lair of the cave creature. The fight begins!";
+    String roomDetails = "You have arrived at the lair of the Shadow Beast. The fight begins!";
     boolean gameWinner = false;
-    boolean gameLoser = false;
+    boolean gameLoser = true;
     Map<String, Integer> exits = new HashMap<>();
 
     @Override
@@ -31,11 +30,9 @@ public class RoomTen implements Room{
     }
 
     @Override
-    public void toggleWinOrLoseRoom() {
-        Random random = new Random();
-        boolean battleWon = random.nextBoolean();
-        gameWinner = battleWon;
-        gameLoser = !battleWon;
+    public void setWinningRoom() {
+        gameWinner = true;
+        gameLoser = false;
     }
 
     @Override
@@ -45,12 +42,26 @@ public class RoomTen implements Room{
 
     @Override
     public void displayWinMessage() {
-
+        System.out.println(Constants.ANSI_GREEN + "\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 " +
+                "\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605\u2605 \u2605 " +
+                "\u2605 \u2605 \u2605");
+        System.out.println("CONGRATULATIONS, YOU HAVE DEFEATED THE SHADOW BEAST!");
+        System.out.println("\t\t\tLEVEL ONE HAS BEEN WON!");
+        System.out.println("\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 " +
+                "\u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605 \u2605\u2605 \u2605 \u2605 \u2605 " +
+                "\u2605" + Constants.ANSI_RESET);
+        System.out.println("Come back and play again to see if you can find the treasure!");
     }
 
     @Override
     public void displayLoseMessage() {
-
+        System.out.println(Constants.ANSI_RED + "\u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 " +
+                "\u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620");
+        System.out.println("YOU HAVE BEEN DEFEATED BY THE SHADOW BEAST!");
+        System.out.println("\t\t\tLEVEL ONE LOST");
+        System.out.println("\u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 " +
+                "\u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620 \u2620" + Constants.ANSI_RESET);
+        System.out.println("Come back and try again!");
     }
 
     @Override
