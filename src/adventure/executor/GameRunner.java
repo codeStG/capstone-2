@@ -17,25 +17,24 @@ import java.util.Scanner;
     public static void runGame() {
         Scanner scanner = new Scanner(System.in);
         Level levelOne = new LevelOne();
+        //GameRunner should not care about the rooms.
         Map<Integer, Room> rooms = levelOne.getRooms();
         Map<String, String> directions = Directions.getDirections();
 
-        int room = 1;
+        int roomNumber = 1;
         System.out.println("Welcome Warrior! What is your name?");
         Player player = new Player(scanner.nextLine());
 
 
         System.out.println();
         while(true) {
-            //This is so that we can shorthand rooms.get(room) since it is used to frequently.
-            Room currentRoom = rooms.get(room);
+            Room currentRoom = rooms.get(roomNumber);
 
-            //First we display the details of the current room.
             System.out.println(currentRoom.displayDetails());
 
             //This switch statement performs the operations necessary on the rooms that have items that must be added
             // to the players inventory and the rooms that are winning and losing rooms.
-            switch(room) {
+            switch(roomNumber) {
                 case 5:
                     currentRoom.displayWinMessage();
                     break;
@@ -65,7 +64,7 @@ import java.util.Scanner;
                     break;
             }
 
-            //Here we create a Map of exits that relate to the exits available to the current room the player is in.
+            //Here we create a Map of exits that relate to the exits available to the current roomNumber the player is in.
             Map<String, Integer> exits = currentRoom.getExits();
             System.out.print("The available exits are: ");
             for(String exit: exits.keySet()) {
@@ -97,10 +96,10 @@ import java.util.Scanner;
             }
 
             //Here we check to make sure the direction variable that was set above matches a key inside of the exits
-            // Map. If so, we set the room equal to the room mapped to that exit direction. If not, the user gets an
+            // Map. If so, we set the roomNumber equal to the roomNumber mapped to that exit direction. If not, the user gets an
             // error message stating that the direction entered in invalid.
             if(exits.containsKey(direction)) {
-                room = exits.get(direction);
+                roomNumber = exits.get(direction);
             } else {
                 System.out.println(Constants.ANSI_YELLOW + "Invalid direction entered." + Constants.ANSI_RESET);
             }

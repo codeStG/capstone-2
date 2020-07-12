@@ -3,8 +3,6 @@ package adventure.rooms;
 import java.util.Map;
 
 public interface Room {
-//    void exitPoint(String direction, int roomID);
-
     int getRoomID();
 
     boolean isWinRoom();

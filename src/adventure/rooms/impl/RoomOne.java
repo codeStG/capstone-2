@@ -15,6 +15,10 @@ public class RoomOne implements Room{
     boolean gameLoser = false;
     Map<String, Integer> exits = new HashMap<>();
 
+    public RoomOne() {
+        exits.put("S", 2);
+    }
+
     @Override
     public int getRoomID() {
         return roomID;
@@ -52,7 +56,6 @@ public class RoomOne implements Room{
 
     @Override
     public Map<String, Integer> getExits() {
-        exits.put("S", 2);
         return new HashMap<String, Integer>(exits);
     }
 }

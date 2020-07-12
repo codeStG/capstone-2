@@ -1,14 +1,14 @@
 package adventure.players;
 
 public class Player {
-    private String name;
-    private boolean hasSword;
-    private boolean hasArmor;
+    private final String name;
+    private boolean hasSword = false;
+    private boolean hasArmor = false;
 
     public Player(String name) {
-        this.name = name;
-        this.hasSword = false;
-        this.hasArmor = false;
+        final String firstLetter = name.substring(0, 1).toUpperCase();
+        final String remainingName = name.substring(1).toLowerCase();
+        this.name = firstLetter + remainingName;
     }
 
     public boolean getHasSword() {
@@ -28,10 +28,6 @@ public class Player {
     }
 
     public String getName() {
-        final String initialName = this.name;
-        final String firstLetter = initialName.substring(0, 1).toUpperCase();
-        final String remainingName = initialName.substring(1, initialName.length()).toLowerCase();
-        this.name = firstLetter + remainingName;
         return name;
     }
 }

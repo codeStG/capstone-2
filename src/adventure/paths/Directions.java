@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Directions {
-    private static Map<String, String> words = new HashMap<String, String>();
+    private static final Map<String, String> words = new HashMap<String, String>();
 
     public static Map<String, String> getDirections() {
         words.put("NORTH", "N");

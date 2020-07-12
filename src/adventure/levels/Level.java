@@ -8,7 +8,4 @@ public abstract class Level{
 
     abstract public Map<Integer, Room> getRooms();
 
-//    abstract public void displayWinMessage();
-//
-//    abstract public void displayLoseMessage();
 }
