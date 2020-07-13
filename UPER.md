@@ -93,15 +93,21 @@
   that each word is capitalized. Once done with that, I just had to refactor to incorporate a better, more cohesive
    design. To help me achieve this, I attended Craig Stockton's session on Saturday and received some awesome
     feedback. After discussing my project with Craig and Abram Jablonski, I was able to identify key portions of my
-     codebase that were a bit off from the rest of the logic. These big points were my Room and Level functionalities
-     . Room contained some functionality specific to the Level# the player is currently on, so I needed to take that
-      out from the specific Room# and place it in the Level#, as well as modify the interface and abstract class
-      , respectively.
-
-<br>
-
-
+     codebase that were a bit off from the rest of the logic. These big points were my Room and Level functionalities. 
+     Room contained some functionality specific to the Level# the player is currently on, so I needed to take that
+      out from the specific Room# and place it in the Level#, as well as modify the interface and abstract class, 
+      respectively.
 <h2>
     4. Reflection / Refactor
 </h2>
+<p>Now that I have completed the adventure game, there are a couple of things that I would most definitely do
+ differently if solving this problem again with more time. For one, I would take more time to understand UML diagrams
+  and how to set them up so that I can clearly outline my classes and interfaces prior to coding; I truly believe
+   this would significantly reduce my need to go back and refactor, which was notated on two separate occasions above. 
+   On top of that, having a clear understanding of the overhead structure of my project would have reduced
+    confusion along the way and ultimately help to keep me on a steady track. Furthermore, I would have incorporated
+     a second level to help bolster the clarity of the use of the Level abstract class and to help make the game more
+      fun overall. Finally, I would have looked into different GUI options to help bring my game to life and allow
+       the user to have a more enjoyable experience overall. 
+</p>
 
