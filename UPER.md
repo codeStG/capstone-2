@@ -60,7 +60,9 @@
          implements the Room interface, that is available in the Level# for the player to go through. After this step
          , I was confident in my implementation of abstractions in my codebase and moved on to making the adventure
           game more enjoyable with some additional functionality like the ability to pick up a weapon and use it
-           against a character that once would make you lose the game. After adding additional logic and functionality, 
+           against a character that once would make you lose the game. After adding additional logic and
+            functionality, I planned on working more on the overall design of the game and work on incorporating some
+             SOLID principles wherever possible if time allows.
 </p>
 
 <h2>
@@ -92,7 +94,9 @@
    design. To help me achieve this, I attended Craig Stockton's session on Saturday and received some awesome
     feedback. After discussing my project with Craig and Abram Jablonski, I was able to identify key portions of my
      codebase that were a bit off from the rest of the logic. These big points were my Room and Level functionalities
-     . Room contained some functionality specific 
+     . Room contained some functionality specific to the Level# the player is currently on, so I needed to take that
+      out from the specific Room# and place it in the Level#, as well as modify the interface and abstract class
+      , respectively.
 
 <br>
 

@@ -7,10 +7,11 @@ This text-based adventure game allows you to maneuver your player through a dark
  monsters. To begin, the game will prompt you to enter your desired player name. Once you have entered a name for
   your player, you will have the opportunity to roam through the cave with the options shown in the terminal. Note
    that you need not only enter the single character representation of the options provided, but you may also enter
-    the complete word (i.e. South instead of S, West instead of W, etc.) in order to move your player to the next room. 
+    the complete word (i.e. South instead of S, West instead of W, etc.) or phrases (i.e. move east, head north, etc
+    .) in order to move your player to the next room. 
     
 There is a total of 10 rooms you can go through, some that promise treasures, others that promise death. It is up to
- you which path you decide to go down. Good luck!
+ you to decide which path to go down. Good luck!
 
 
 

@@ -8,6 +8,11 @@ import java.util.Scanner;
 
 
 public final class GameRunner {
+    private static GameRunner instance = null;
+
+    private GameRunner() {
+        runGame();
+    }
 
     public static void runGame() {
         Scanner scanner = new Scanner(System.in);
@@ -23,6 +28,12 @@ public final class GameRunner {
                 levelOneCave.getExit(player, levelOneCave.getCurrentRoom());
             }
         }
-
     }
+
+    public static GameRunner getInstance() {
+        if(instance == null) instance = new GameRunner();
+
+        return instance;
+    }
+
  }
