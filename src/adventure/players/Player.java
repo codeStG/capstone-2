@@ -1,14 +1,21 @@
 package adventure.players;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Player {
     private final String name;
     private boolean hasSword = false;
     private boolean hasArmor = false;
 
     public Player(String name) {
-        final String firstLetter = name.substring(0, 1).toUpperCase();
-        final String remainingName = name.substring(1).toLowerCase();
-        this.name = firstLetter + remainingName;
+        String[] temp = name.split("\\W+");
+        List<String> inputName = Arrays.asList(temp);
+        List<String> capitalizedName =
+                inputName.stream().map(n -> Character.toUpperCase(n.charAt(0)) + n.substring(1).toLowerCase()).collect(Collectors.toList());
+        String modifiedPlayerName = String.join(" ", capitalizedName);
+        this.name = modifiedPlayerName;
     }
 
     public boolean getHasSword() {

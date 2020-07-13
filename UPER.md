@@ -85,8 +85,14 @@
      to push through with the changes and everything ended up working out successfully with very little to any
       refactoring needed in classes that were separate from those that I modified. Once I completed this, my
        self-confidence shot through the roof. I truly had an adventure game that was entirely my own with some pretty
-        awesome functionalities, if I may say so myself! 
-</p>
+        awesome functionalities, if I may say so myself!</p>
+<p>The last step I had was to introduce a lambda and a stream into my adventure game, which I decided to implement at
+ the creation of a new player. My lambda/stream combination takes in the name provided by the user and modified it so
+  that each word is capitalized. Once done with that, I just had to refactor to incorporate a better, more cohesive
+   design. To help me achieve this, I attended Craig Stockton's session on Saturday and received some awesome
+    feedback. After discussing my project with Craig and Abram Jablonski, I was able to identify key portions of my
+     codebase that were a bit off from the rest of the logic. These big points were my Room and Level functionalities
+     . Room contained some functionality specific 
 
 <br>
 

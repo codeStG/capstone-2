@@ -6,17 +6,15 @@ import adventure.rooms.Room;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RoomOne implements Room{
+public class CaveRoomOne implements Room{
     int roomID = 1;
     String roomDetails ="Your journey begins facing a dark cave with a daunting " +
             "sign that reads, \"" + Constants.ANSI_RED + "BEWARE" + Constants.ANSI_RESET + "\" written in what seems " +
             "to be blood.";
-    boolean gameWinner = false;
-    boolean gameLoser = false;
     Map<String, Integer> exits = new HashMap<>();
 
-    public RoomOne() {
-        exits.put("S", 2);
+    public CaveRoomOne() {
+        exits.put("S", 1);
     }
 
     @Override
@@ -25,37 +23,12 @@ public class RoomOne implements Room{
     }
 
     @Override
-    public boolean isWinRoom() {
-        return gameWinner;
-    }
-
-    @Override
-    public boolean isLoseRoom() {
-        return gameLoser;
-    }
-
-    @Override
-    public void setWinningRoom() {
-        //Empty body. not used here.
-    }
-
-    @Override
     public String displayDetails() {
         return roomDetails;
     }
 
     @Override
-    public void displayWinMessage() {
-        //Empty body. not used here.
-    }
-
-    @Override
-    public void displayLoseMessage() {
-        //Empty body. not used here.
-    }
-
-    @Override
     public Map<String, Integer> getExits() {
-        return new HashMap<String, Integer>(exits);
+        return new HashMap<>(exits);
     }
 }
