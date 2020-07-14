@@ -104,7 +104,8 @@
  differently if solving this problem again with more time. For one, I would take more time to understand UML diagrams
   and how to set them up so that I can clearly outline my classes and interfaces prior to coding; I truly believe
    this would significantly reduce my need to go back and refactor, which was notated on two separate occasions above. 
-   On top of that, having a clear understanding of the overhead structure of my project would have reduced
+   This time around, I made reverse generated a UML diagram based off of my finished source code and then modified it
+    from there. On top of that, having a clear understanding of the overhead structure of my project would have reduced
     confusion along the way and ultimately help to keep me on a steady track. Furthermore, I would have incorporated
      a second level to help bolster the clarity of the use of the Level abstract class and to help make the game more
       fun overall. Finally, I would have looked into different GUI options to help bring my game to life and allow

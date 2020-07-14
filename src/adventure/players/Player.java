@@ -14,8 +14,7 @@ public class Player {
         List<String> inputName = Arrays.asList(temp);
         List<String> capitalizedName =
                 inputName.stream().map(n -> Character.toUpperCase(n.charAt(0)) + n.substring(1).toLowerCase()).collect(Collectors.toList());
-        String modifiedPlayerName = String.join(" ", capitalizedName);
-        this.name = modifiedPlayerName;
+        this.name = String.join(" ", capitalizedName);
     }
 
     public boolean getHasSword() {
